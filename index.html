@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Producto</h1>
+        <form action="#" id="form-formulario">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo">
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" >
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bodega">Bodega</label>
+                    <select id="bodega" name="bodega">
+                        <option value="0"></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sucursal">Sucursal</label>
+                    <select id="sucursal" name="sucursal">
+                        <option value="0"></option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="moneda">Moneda</label>
+                    <select id="moneda" name="moneda">
+                        <option value="0"></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input type="text" id="precio" name="precio" >
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label>Material del Producto</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="material[]" value="plastico"> Plástico</label>
+                    <label><input type="checkbox" name="material[]" value="metal"> Metal</label>
+                    <label><input type="checkbox" name="material[]" value="madera" > Madera</label>
+                    <label><input type="checkbox" name="material[]" value="vidrio" > Vidrio</label>
+                    <label><input type="checkbox" name="material[]" value="textil"> Textil</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">Guardar Producto</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
